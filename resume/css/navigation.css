@@ -1,0 +1,34 @@
+/*fixtitle(固定导航栏)*/
+/*其他部分请看相应式的css (responsive.css)*/
+body{margin:0;padding:0;background:#fff;font-size:14px;font-family:Arial,Helvetica,'STHeiti','Microsoft YaHei','sans-serif'}
+#fixtitle{
+	position: fixed;
+  opacity: 0;
+	top: 0;
+	width: 100%;height: 60px;
+	background:#363636;
+	z-index: 3;
+	opacity: 0.9;
+}
+#titlediv img{
+	width: 100px;height: 60px;
+
+}
+#btns ul{
+  height: 60px;
+  /*background: red; */
+}
+
+#btns li:nth-of-type(4){
+	background: #4F4F4F;
+	border-radius: 0px;
+}
+#btns p{
+  transition:all 0.25s ease-in-out ;
+  cursor: pointer;
+  /*background: red;*/
+}
+
+
+
+

@@ -1,0 +1,885 @@
+/*content_1 部分()*/
+
+
+#content1{
+    margin: 0 auto; height: 100%;
+    width: 100%;/*height: 600px;*/
+}
+  /*这是content1轮播的基本布局*/
+#c1cut{
+    width: 100%;
+    /*background: black;*/
+    overflow: hidden;
+  }
+#c1backs{
+  width: 100%;
+  /*background: blue;*/
+}
+.back{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 0 0; 
+}
+#back2img{
+  width: 100%;height: 100%;
+  background: url(../img/content1/c1back1.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#centerbackimg{
+  width: 100%;height: 100%;
+  background: url(../img/content1/c1back3.gif) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#lastbackimg{
+  width: 100%;height: 100%;
+  background: url(../img/content1/c1back4.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#backimg1{
+	width: 960px;height: 100%;
+	position: absolute;
+  top: 50%;left: 50%;
+  transform:translate(-50%,-50%);
+}
+#c1top{
+  cursor: pointer;
+  width: 120px;height: 70%;
+  position: absolute;
+  top: 0%;left:90% ;
+  transform: translate(-90%,0%);
+  z-index: 3;
+}
+
+#c1top>img{
+  transform: translateY(-5%);
+  width: 100%;height: 100%;
+}
+
+.back:nth-of-type(1){
+  background: black;
+}
+#back1{
+  position: relative;
+	color: white;
+	font-size: 50px;
+}
+.b1img{
+  width: 100px;height:100px;
+  background: url(../img/首页img/cat2.gif);
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 25%;left:50%;
+  transform:translate(-50%,-25%);
+  z-index: 10;
+}
+.b1span{
+  position: absolute;
+  top: 70%;left:50%;
+  transform:translate(-50%,-70%);
+  font-family: WebFont2;
+}
+
+
+.back:nth-of-type(2){
+   position: relative;
+}
+.b2spans{
+  border-radius: 8px;
+  background: rgba(0,0,0,0.4);
+  color: white;font-size: 30px;
+  position: absolute;
+  padding:20px 0 0 20px;
+  top: 50%;left:50%;
+  transform:translate(-50%,-50%);
+  font-family: WebFont2;
+  
+}
+.b2span{
+	display: block;
+  padding-bottom: 20px;
+}
+
+
+.back:nth-of-type(3){
+  background: white;
+}
+.b3spans{
+  color: black;font-size: 35px;
+  position: absolute;
+  top: 50%;left:90%;
+  transform:translate(-90%,-50%);
+  font-family: WebFont3;
+  
+}
+.b3span{
+	display: block;
+	width: 400px;
+	margin-bottom: 20px;
+}
+
+
+.back:nth-of-type(4){
+}
+
+
+.back:nth-of-type(5){
+  background: #0c0c0c;
+}
+   /*about*/
+ #about{
+ 	color: black;
+ 	position: absolute;
+ 	z-index: 2;
+ 	top: 50%;left: 50%;
+ 	transform: translate(-50%,-50%);
+ } 
+ #about_content {
+  margin-top: 5%;
+  height: 510px;
+  font-family: WebFont2;
+}
+#about_list_content {
+  margin: 50px auto;
+  width: 800px;
+  height: 150px;
+  padding: 20px 0;
+  border-radius: 30px;
+  background: #a0a0b4;  
+}
+.about_list {
+  float: left;
+  margin-left: 120px;
+  cursor: pointer;
+}
+#about_list1 {
+  margin-left: 60px;
+}
+.about_list:hover .about_list_eg {
+  background: rgba(255,255,255,1);
+  color: #702fa8;
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.3);
+}
+.about_list:hover .about_list_eg:before{
+  -webkit-animation: l_to_r 1s forwards;
+  -moz-animation: l_to_r 1s forwards;
+  -o-animation: l_to_r 1s forwards;
+  animation: l_to_r 1s forwards;
+}
+.about_list_eg {
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 0 0 4px rgba(255,255,255,1);
+  border-radius: 50%;
+  overflow: hidden;
+  color: #fff;
+  -webkit-transition: background 1s, color 1s, box-shadow 1s;
+  transition: background 1s, color 1s, box-shadow 1s;
+}
+.about_list_eg:before {
+  display: block;
+  line-height: 130px;
+  text-align: center;
+}
+#about_en_edu:before {
+  color: black;
+  content: url(../img/content1/education.png);
+}
+#about_en_age:before {
+  content: url(../img/content1/age.png);
+}
+#about_en_loc:before {
+  content: url(../img/content1/location.png);
+}
+#about_en_sta:before {
+  content: url(../img/content1/status.png);
+}
+.about_list_cn {
+  color: black;
+  padding-top: 20px;
+  line-height: 20px;
+  position: relative;
+  color: #fff;
+}
+.about_list_cn p {
+   color: black;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 14px;
+}
+.about_list_cn p:before {
+  display: block;
+  content: "";
+  position: absolute;
+  background: #ccc;
+  height: 2px;
+  width: 90px;
+  bottom: 25px;
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+#about_info {
+ color: white;
+  clear: both;
+  margin: 50% auto;
+  height: 160px;
+  width: 0;
+  position: relative;
+  overflow: hidden;
+}
+#about_info:before,
+#about_info:after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  content: "";
+}
+#about_info:before {
+  top: 0;
+  left: 0;
+  border-top: 2px solid #5686D6;
+  border-left: 2px solid #5686D6;
+}
+#about_info:after {
+  bottom: 0;
+  right: 0;
+  border-right: 2px solid #5686D6;
+  border-bottom: 2px solid #5686D6;
+}
+#about_info p {
+  text-align: center;
+  line-height: 40px;
+  position: relative;
+  bottom: -300px;
+}
+@-webkit-keyframes l_to_r {
+  49% {
+    -webkit-transform: translate(100%);
+    transform: translate(100%);
+  }
+  50% {
+    -webkit-transform: translate(-100%);
+    transform: translate(-100%);
+    opacity: 0;
+  }
+}
+@-moz-keyframes l_to_r {
+  49% {
+    transform: translate(100%);
+  }
+  50% {
+    transform: translate(-100%);
+    opacity: 0;
+  }
+}
+@-o-keyframes l_to_r {
+  49% {
+    transform: translate(100%);
+  }
+  50% {
+    transform: translate(-100%);
+    opacity: 0;
+  }
+}
+@keyframes l_to_r {
+  49% {
+    transform: translate(100%);
+  }
+  50% {
+    transform: translate(-100%);
+    opacity: 0;
+  }
+}
+#about_list_content{
+  margin: 40px auto;
+  width: 700px;
+}
+#about_list1 {
+  margin-left: 76px;
+}
+.about_list {
+  margin-left: 76px;
+}
+#about_list_content {
+  padding: 15px 0;
+}
+/************************/
+
+
+.back:nth-of-type(6){
+}
+/*skill 部分*/
+#c1backs .skill{
+   position: absolute;
+   top: 50%;left: 50%;
+   transform: translate(-50%,-50%);
+   z-index: 2;
+   width: 80%;
+   margin: 5% auto;
+   color: white;
+   line-height: 50px;
+   font-family: WebFont2;
+}
+#c1backs .skill h2,h3{
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 6px;
+  color: rgb(210,180,140);
+}
+#c1backs .skill h3{
+  margin-bottom: 30px;
+  letter-spacing: 10px;
+}
+#c1backs .skill .skill_list_item{
+  position: relative;
+  margin-bottom: 25px;
+}
+#c1backs .skill .skill_list_item p{
+  border-left: 4px solid black;
+  background: blue;
+  cursor: pointer;
+  text-indent: 10px;
+}
+ .skill_list_item>p:hover{
+  animation: rubberBand .5s;
+}
+#c1backs .skill .skill_list_item:hover .skill_hide{
+  display: block;
+  animation: jello 1s;
+}
+#c1backs .skill .skill_list_item:nth-of-type(1) p{
+  width: 80%;
+  color: #2a7da9;
+  border-color:#3498db;
+  background: #d6efff;
+}
+#c1backs .skill .skill_list_item:nth-of-type(2) p{
+  width: 70%;
+  color: #2a7da9;
+  border-left: 4px solid #3498db;
+  background: #d6efff;
+}
+#c1backs .skill .skill_list_item:nth-of-type(3) p{
+  width: 50%;
+  color: #6e9c0f;
+  border-left: 4px solid #80bd01;
+  background: #eaf6d0;
+}
+#c1backs .skill .skill_list_item:nth-of-type(4) p{
+  width: 30%;
+  color: #6e9c0f;
+  border-left: 4px solid #80bd01;
+  background: #eaf6d0;
+}
+#c1backs .skill .skill_list_item:nth-of-type(5) p{
+  width: 25%;
+  color: #ff742a;
+  border-left: 4px solid #fdbc40;
+  background: #fff6dd;
+}
+#c1backs .skill .skill_list_item .skill_hide{
+  position: absolute;
+  left: 200px;
+  top:0;
+  line-height: 25px;
+  color: wheat;
+  background: #B9621C;
+  padding: 10px 20px;
+  border-radius: 10px;
+  z-index: 20;
+  letter-spacing: 2px;
+  display: none;
+}
+/***********************************/
+
+
+.c1btn{
+  cursor: pointer;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: calc((100% - 60px)/2);
+  top: calc(100% - 80px); ;
+  transform: scale(0.8);
+  opacity: 0.8;
+}
+.c1btnUp{
+  cursor: pointer;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: calc((100% - 60px)/2);
+  top: calc( 0px); ;
+  transform: scale(0.8) rotate(180deg);
+  opacity: 0.8;
+}
+.btnrun{
+  animation:btnrun 1s linear infinite;
+}
+@keyframes btnrun{
+  40%{transform: scale(0.8);opacity: 0.8;}
+  60%{transform: scale(0.9);opacity: 1;}
+  70%{transform: scale(0.6);opacity:0.8;}
+}
+@-webkit-keyframes btnrun{
+  40%{transform: scale(0.8);opacity: 0.8;}
+  60%{transform: scale(0.9);opacity: 1;}
+  70%{transform: scale(0.6);opacity:0.8;}
+} 
+@-moz-keyframes btnrun{
+  40%{transform: scale(0.8);opacity: 0.8;}
+  60%{transform: scale(0.9);opacity: 1;}
+  70%{transform: scale(0.6);opacity:0.8;}
+} 
+@-ms-keyframes btnrun{
+  40%{transform: scale(0.8);opacity: 0.8;}
+  60%{transform: scale(0.9);opacity: 1;}
+  70%{transform: scale(0.6);opacity:0.8;}
+}    
+.c1btnwhite,.c1btnwhiteUp{
+  background: url(../img/content1/arrow.png) no-repeat -2px -1px;
+  z-index: 3;
+}
+.c1btnblack,.c1btnblackUp{
+  background: url(../img/content1/arrow.png) no-repeat -2px -61px;
+   z-index: 3;
+}
+
+    /*这是content1 轮播的第三部分*/
+ #dogdiv{
+  width: 640px;height: 100%;
+  /*background: red;*/
+ }
+ #dogdiv img{
+  width: 100%;height: 100%;
+ }   
+     /*这是content1 轮播的第四部分*/
+ #loldiv{
+  width: 640px;height: 100%;
+  float: right;
+  /*background: red;*/
+  background:url(../img/content1/lol.png) no-repeat;
+  background-position: center center;
+  background-size: cover; 
+ }
+ 
+/*****************邪恶的分界线********************/
+
+
+/*这是 content2 第二部分内容*/
+
+
+#content2{
+	position: relative;
+	width: 100%;/*height: 700px;*/
+	/*background: deepskyblue;*/
+	margin: 0 auto;
+}
+#box {
+  position: relative;
+  width:100%;
+  height:100%;
+}
+      
+#right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-100%, -50%);
+  width: 50px;
+  height: 100px;
+  opacity: 0.3;
+  font-size: 50px;
+}
+
+#left {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0, -50%);
+  width: 50px;
+  height: 100px;
+  opacity: 0.3;
+  font-size: 50px;
+}
+#backbox1{
+	position: absolute;
+  transition: 1s linear;
+  width: 100%;height: 100%;
+  background: url(../img/content2/1.jpg) no-repeat;
+  background-size: cover;opacity: 1;
+  background-position: center center; 
+}
+#backbox2{
+	position: absolute;
+  transition: 1s linear;
+  width: 100%;height: 100%;
+  background: url(../img/content2/2.jpg) no-repeat;
+  background-size: cover;opacity: 0;
+  background-position: center center; 
+}
+#backbox3{
+	position: absolute;
+  transition: 1s linear;
+  width: 100%;height: 100%;
+  background: url(../img/content2/3.jpg) no-repeat;
+  background-size: cover;opacity: 0;
+  background-position: center center; 
+}
+#backbox4{
+	position: absolute;
+  transition: 1s linear;
+  width: 100%;height: 100%;
+  background: url(../img/content2/4.jpg) no-repeat;
+  background-size: cover;opacity: 0;
+  background-position: center center; 
+}
+#backbox5{
+	position: absolute;
+  transition: 1s linear;
+  width: 100%;height: 100%;
+  background: url(../img/content2/5.jpg) no-repeat;
+  background-size: cover;opacity: 0;
+  background-position: center center; 
+}
+
+#pixelbox{
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;height: 100%;
+   background: url(../img/content2/pixel.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center; 
+  opacity: 0.2;
+}
+    /*这是第二部分控制器*/
+
+#Controllerbox{
+  top: 60%;left: 15%;
+  transform:translate(-15%,-60%);
+  position: absolute;
+  width: 300px;height: 480px;
+  overflow: hidden;
+ /* background: black;*/
+
+}    
+#Controller{
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;left: 0;
+  z-index: 3;
+  width: 260px;
+  height: 128px;
+  background: #FFC000;
+  /*background: black;*/
+  font-size: 14px;
+  cursor: pointer;
+  overflow: hidden;
+  padding:40px 20px ;
+}
+#flower{
+  position: absolute;
+  top: 20px;left: 40px;
+  z-index: 2;
+  width: 350px;height: 336px;
+  animation:flower 15s linear infinite;
+}
+@-webkit-keyframes flower{
+	from{transform: rotate(0);}
+	to{transform: rotate(360deg);}
+}
+#Controller>img:nth-of-type(2){
+  position: absolute;
+  bottom: 0;right: 0;
+  z-index: 3;
+  width: 120px;height: 80px;
+}
+	/*这是控制器点击显示的div*/
+#menu{
+	position: absolute;
+	width: 220px;height: 260px;
+	/*background: red;*/
+	z-index: 2;
+	opacity: 0;
+  	transition:0.5s linear;
+  	transform: translateY(240px);
+  
+}
+#ulbox{
+  position: relative;
+  /*background: yellow;*/
+  height: 174px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  font-family:WebFont ;
+}
+#menu ul{
+  /*transition: 0.35s linear;*/
+  position: absolute;
+  top: -174px;
+}
+#menu li{
+  text-transform: translate();
+  line-height: 35px;
+  font-size: 26px;
+  padding: 8px 8px 10px 8px;
+  height:35px;
+  color: white;
+  margin-top: 5px;
+  margin-bottom:5px;
+  cursor: pointer;
+  background: black;
+}
+
+#menudiv{
+  height:35px;
+}
+.menudivs{
+  cursor: pointer;
+  width: 30px;height: 30px;
+  margin-right: 5px;
+  background: black;
+  float: left;
+  color: white;
+  padding: 5px;
+}
+.menudivs img{
+  widows: 100%;height: 100%;
+}
+
+  /*这是左边展示窗口的css(leftshow)*/
+
+  #leftshow{
+  	position: absolute;
+  	top: 0;left: -50%;
+    width: 50%;height: 100%;
+   /* background: red;*/
+    opacity: 0;
+ }
+   #leftone{
+      transition:0.5s linear;
+      transform:rotateY(0deg);
+      position: absolute;
+      width: 100%;height: 100%;
+      background: url(../img/content2/lolgirl.jpg) no-repeat;
+      background-position:0 0; 
+      background-size: cover;
+   }
+   .lolbox{
+  	position: relative;
+  	width: 100%;height: 45%;
+  	margin: 60px auto;
+  }
+  .loltitle{
+  	position: absolute;
+  	left: calc((100% - 300px)/2);
+  	top: calc((100% - 200px)/4); 
+  	width: 300px;height: 200px;	
+  }
+  
+  .lolimg{
+ 	position: relative;
+  	width: 75%;height: 35%;
+  	margin: 0px auto;
+ }
+    #lefttwo{
+      transition:0.5s linear;
+      transform:rotateY(90deg);
+      position: absolute;
+      width: 100%;height: 100%;
+      background: url(../img/content2/women2.jpg) no-repeat;
+      background-position:0 0; 
+      background-size: cover;
+   }
+   .lfet2back{
+      text-align: center;
+      border-radius:8px; 
+      background: rgba(0,0,0,0.2);
+      margin: 35% auto;
+      width: 80%;height: 50%
+   }
+   .lfet2back img{
+      width: 100px;height: 100px;
+      display: block;
+      margin: 0 auto;
+   }
+   .lfet2span{
+      padding: 10px 0 10px 0px;
+      font-size: 25px;
+      display: block;color: black;
+      font-family: WebFont2;
+   }
+ /*这是右边窗口的css(rightshow)*/
+ #rightshow{
+    position: absolute;
+    top: 0;left: 100%;
+    background: url(../img/content2/rightshow.jpg) no-repeat;
+    background-position:0 0; 
+    background-size: cover;
+    width: 50%;height: 100%;
+    opacity: 0;
+ }
+  .padbox{
+  	cursor: pointer;
+  	position: relative;
+  	width: 75%;height: 35%;
+  	margin: 100px auto;background: black;
+  }
+  .padopen{
+  	position: absolute;
+  	top: 0;left: 0;
+  	width: 100%;
+  	height: 100%;
+  	background: rgba(255,255,255,1);
+  	cursor: pointer;
+  	z-index: 2;
+  	text-align: center;
+  }
+ .padopen img{
+ 	width: 100px;height: 100px;
+ 	position: absolute;
+ 	top: 50%;left: 50%;
+ 	transform: translate(-50%,-50%);
+ 	z-index: 3;
+ }
+ .padopen p{
+ 	position: absolute;
+ 	top: 10%;left: 50%;
+ 	transform: translate(-50%,-10%);
+ 	font-size: 50PX;
+ 	font-family: webFont;
+ }
+ .padimg{
+ 	position: relative;
+  	width: 75%;height: 35%;
+  	margin: 50px auto;
+  	background-image: url(../img/content2/pad2.jpg);
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: center center;
+ }
+/***************邪恶的分界线******************/
+
+
+/*这是 content3 第三部分内容*/
+#content3{
+  	position: relative;
+	width: 100%;/*height: 600px;*/
+	background: black;
+	margin: 0 auto;
+}
+ 
+ /*这是c3正文部分*/
+#c3back{
+  position: relative;
+	background: url(../img/content3/content3.jpg);
+	background-size: cover;
+	background-position: center center;
+	width: 100%;height: 100%;
+}
+   /*c3正文的初始展示页面(c3hidden)*/
+#c3hidden{
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  width: 70%;height: 65%;
+  background: rgba(0,0,0,0.9);
+  display:none;
+  position: absolute;
+  left: calc((100% - 70%)/2);  
+  top: calc((100% - 65%)/2);
+   z-index: 2;
+} 
+ 
+#hiddenimg{
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+#c3left{
+  /*background: red;*/
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+#c3hidden h3{
+  font-family: WebFont;	
+  font-size: 1.5em;
+  color: white;
+  margin:10% 10px 10px 5%;
+}
+#c3hidden p{
+  cursor: default;
+  text-align: center;
+  margin:10%  10% 10% 50px;
+  color: white;
+  font-size: 40px;
+  font-family: WebFont;
+  padding-bottom: 20px;
+  border-bottom: 3px solid white;
+}
+#c3hidden p b{
+	-webkit-transition: 0.5s linear;
+	transition: 0.5s linear;
+	color: black;
+}
+
+#contact{
+  position: relative;
+  cursor: pointer;
+  margin: 10% auto;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+}
+#bottom{
+  border-radius:6px; 
+  text-align: center;
+  position: absolute;
+  top: 0;left: 0;
+  width: 200px;
+  height: 40px;
+  background: white;
+}
+.bottomrun:hover{
+  animation: bounce 0.55s;
+}
+     /*这是交互页面c3show*/
+#c3show{
+  position: absolute;
+  left: calc((100% - 70%)/2);  
+  top: calc((100% - 65%)/2); ;
+  width: 70%;height: 65%;
+  background: rgba(0,0,0,0.9);
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  transform: scale(0.75);
+  opacity: 0;
+  z-index: 1;
+ 
+  font-size:15px;
+  font-family: WebFont3;
+}
+/*这是content3 底部的样式*/
+
+#endimgbox {
+	text-align: center;
+	position: absolute;
+	bottom: 5%;left:50%;
+	transform: translate(-50%,0);
+}
+
+#endimgbox p {
+	color: white;
+	margin: 0 auto;
+	display: block;
+}
+

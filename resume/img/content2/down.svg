@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"><![CDATA[
+@font-face {
+  font-family: "ifont";
+  src: url("//at.alicdn.com/t/font_1442373896_4754455.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1442373896_4754455.woff") format("woff"), url("//at.alicdn.com/t/font_1442373896_4754455.ttf") format("truetype"), url("//at.alicdn.com/t/font_1442373896_4754455.svg#ifont") format("svg");
+}
+
+]]></style></defs><g class="transform-group"><g transform="scale(0.015625, 0.015625)"><path d="M512 744.81444c-10.855232 0-21.267373-4.312212-28.943193-11.989055L99.292424 349.061001c-15.985066-15.985066-15.985066-41.902342 0-57.886385 15.985066-15.985066 41.901319-15.985066 57.886385 0l354.820168 354.821191 354.820168-354.821191c15.985066-15.985066 41.901319-15.985066 57.886385 0 15.985066 15.985066 15.985066 41.901319 0 57.886385L540.943193 732.825384C533.267373 740.502227 522.855232 744.81444 512 744.81444z" fill="#ecf0f1"></path></g></g></svg>

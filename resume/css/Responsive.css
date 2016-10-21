@@ -1,0 +1,406 @@
+/*这里是title响应式css*/
+@media screen and (min-width: 1200px) {
+	#titlediv{
+	  width: 1200px;
+	  height: 60px;
+	  margin: 0 auto;  
+	  /*background: cornflowerblue;*/
+	}
+	#btns{
+	  width: 800px;
+	  height: 60px;
+	  /*background: yellow;*/
+	  float:right;
+	}
+	#btns li{
+	  font-size: 18px;
+	  color: white;
+	  text-align: center;
+	  line-height: 60px;
+	  width: 110px;
+	  height: 60px;
+	  margin: 0px 0px 5px 40px;
+	  float: right;
+	  border-radius: 6px;
+	  overflow: hidden;
+	/*  background: yellow;*/
+	}
+}
+@media screen and (min-width:960px) and (max-width:1200px) {
+	#titlediv{
+	  width: 960px;
+	  height: 60px;
+	  margin: 0 auto;  
+	  /*background: cornflowerblue;*/
+	}
+	#btns{
+	  width: 600px;
+	  height: 60px;
+	  /*background: yellow;*/
+	  float:right;
+	}
+	#btns li{
+	  font-size: 18px;
+	  color: white;
+	  text-align: center;
+	  line-height: 60px;
+	  width: 110px;
+	  height: 60px;
+	  margin: 0px 0px 5px 40px;
+	  float: right;
+	  border-radius: 6px;
+	  overflow: hidden;
+	/*  background: yellow;*/
+	}
+}
+
+@media screen and (min-width:600px) and (max-width:960px) {
+	#titlediv{
+	  width: 600px;
+	  height: 60px;
+	  margin: 0 auto;  
+	  /*background: cornflowerblue;*/
+	}
+	#btns{
+	  width: 500px;
+	  height: 60px;
+	  /*background: yellow;*/
+	  float:left;
+	}
+	#btns li{
+	  font-size: 18px;
+	  color: white;
+	  text-align: center;
+	  line-height: 60px;
+	  width: 100px;
+	  height: 60px;
+	  margin: 0px 0px 5px 5px;
+	  float: right;
+	  border-radius: 6px;
+	  overflow: hidden;
+	  /*background: green;*/
+	}
+	#titlediv img{
+		width: 100px;height: 60px;
+		float: left;
+	}
+	#btns li:nth-of-type(4){
+		background: #4F4F4F;
+		border-radius: 0px;
+	}
+}
+
+@media screen and (max-width:600px) {
+	#titlediv img{
+		width: 80px;height: 60px;
+		float: right;
+
+	}
+	#titlediv{
+	  width: 520px;
+	  height: 60px;
+	  margin: 0 auto;  
+	 /* background: cornflowerblue;*/
+	}
+	#btns{
+	  float: left;
+	  height: 60px;
+	  /*background: yellow;*/
+	  float:left;
+	}
+	#btns li{
+	  font-size: 15px;
+	  color: white;
+	  text-align: center;
+	  line-height: 60px;
+	  width: 100px;
+	  height: 60px;
+	  margin: 0px 0px 5px 0px;
+	  float: right;
+	  border-radius: 6px;
+	  overflow: hidden;
+	  /*background: green;*/
+	}
+}
+
+/*******************以下是各版本浏览器兼容************************/
+@-moz-media screen and (min-width: 1200px) {
+	#titlediv{
+	  width: 1200px;
+	  height: 60px;
+	  margin: 0 auto;  
+	  /*background: cornflowerblue;*/
+	}
+	#btns{
+	  width: 800px;
+	  height: 60px;
+	  /*background: yellow;*/
+	  float:right;
+	}
+	#btns li{
+	  font-size: 18px;
+	  color: white;
+	  text-align: center;
+	  line-height: 60px;
+	  width: 110px;
+	  height: 60px;
+	  margin: 0px 0px 5px 40px;
+	  float: right;
+	  border-radius: 6px;
+	  overflow: hidden;
+	/*  background: yellow;*/
+	}
+}
+@-moz-media screen and (min-width:960px) and (max-width:1200px) {
+	#titlediv{
+	  width: 960px;
+	  height: 60px;
+	  margin: 0 auto;  
+	  /*background: cornflowerblue;*/
+	}
+	#btns{
+	  width: 600px;
+	  height: 60px;
+	  /*background: yellow;*/
+	  float:right;
+	}
+	#btns li{
+	  font-size: 18px;
+	  color: white;
+	  text-align: center;
+	  line-height: 60px;
+	  width: 110px;
+	  height: 60px;
+	  margin: 0px 0px 5px 40px;
+	  float: right;
+	  border-radius: 6px;
+	  overflow: hidden;
+	/*  background: yellow;*/
+	}
+}
+
+@-moz-media screen and (min-width:600px) and (max-width:960px) {
+	#titlediv{
+	  width: 600px;
+	  height: 60px;
+	  margin: 0 auto;  
+	  /*background: cornflowerblue;*/
+	}
+	#btns{
+	  width: 500px;
+	  height: 60px;
+	  /*background: yellow;*/
+	  float:left;
+	}
+	#btns li{
+	  font-size: 18px;
+	  color: white;
+	  text-align: center;
+	  line-height: 60px;
+	  width: 100px;
+	  height: 60px;
+	  margin: 0px 0px 5px 5px;
+	  float: right;
+	  border-radius: 6px;
+	  overflow: hidden;
+	  /*background: green;*/
+	}
+	#titlediv img{
+		width: 100px;height: 60px;
+		float: left;
+	}
+	#btns li:nth-of-type(4){
+		background: #4F4F4F;
+		border-radius: 0px;
+	}
+}
+
+@-moz-media screen and (max-width:600px) {
+	#titlediv img{
+		display: none;
+
+	}
+	#titlediv{
+	  width: 480px;
+	  height: 60px;
+	  margin: 0 auto;  
+	 /* background: cornflowerblue;*/
+	}
+	#btns{
+	  
+	  height: 60px;
+	  /*background: yellow;*/
+	  float:left;
+	}
+	#btns li{
+	  #titlediv img{
+		width: 80px;height: 60px;
+		float: right;
+
+	}
+	#titlediv{
+	  width: 520px;
+	  height: 60px;
+	  margin: 0 auto;  
+	 /* background: cornflowerblue;*/
+	}
+	#btns{
+	  float: left;
+	  height: 60px;
+	  /*background: yellow;*/
+	  float:left;
+	}
+	#btns li{
+	  font-size: 15px;
+	  color: white;
+	  text-align: center;
+	  line-height: 60px;
+	  width: 100px;
+	  height: 60px;
+	  margin: 0px 0px 5px 0px;
+	  float: right;
+	  border-radius: 6px;
+	  overflow: hidden;
+	  /*background: green;*/
+	}
+}
+@-ms-media screen and (min-width: 1200px) {
+	#titlediv{
+	  width: 1200px;
+	  height: 60px;
+	  margin: 0 auto;  
+	  /*background: cornflowerblue;*/
+	}
+	#btns{
+	  width: 800px;
+	  height: 60px;
+	  /*background: yellow;*/
+	  float:right;
+	}
+	#btns li{
+	  font-size: 18px;
+	  color: white;
+	  text-align: center;
+	  line-height: 60px;
+	  width: 110px;
+	  height: 60px;
+	  margin: 0px 0px 5px 40px;
+	  float: right;
+	  border-radius: 6px;
+	  overflow: hidden;
+	/*  background: yellow;*/
+	}
+}
+@-ms-media screen and (min-width:960px) and (max-width:1200px) {
+	#titlediv{
+	  width: 960px;
+	  height: 60px;
+	  margin: 0 auto;  
+	  /*background: cornflowerblue;*/
+	}
+	#btns{
+	  width: 600px;
+	  height: 60px;
+	  /*background: yellow;*/
+	  float:right;
+	}
+	#btns li{
+	  font-size: 18px;
+	  color: white;
+	  text-align: center;
+	  line-height: 60px;
+	  width: 110px;
+	  height: 60px;
+	  margin: 0px 0px 5px 40px;
+	  float: right;
+	  border-radius: 6px;
+	  overflow: hidden;
+	/*  background: yellow;*/
+	}
+}
+
+@-ms-media screen and (min-width:600px) and (max-width:960px) {
+	#titlediv{
+	  width: 600px;
+	  height: 60px;
+	  margin: 0 auto;  
+	  /*background: cornflowerblue;*/
+	}
+	#btns{
+	  width: 500px;
+	  height: 60px;
+	  /*background: yellow;*/
+	  float:left;
+	}
+	#btns li{
+	  font-size: 18px;
+	  color: white;
+	  text-align: center;
+	  line-height: 60px;
+	  width: 100px;
+	  height: 60px;
+	  margin: 0px 0px 5px 5px;
+	  float: right;
+	  border-radius: 6px;
+	  overflow: hidden;
+	  /*background: green;*/
+	}
+	#titlediv img{
+		width: 100px;height: 60px;
+		float: left;
+	}
+	#btns li:nth-of-type(4){
+		background: #4F4F4F;
+		border-radius: 0px;
+	}
+}
+
+@-ms-media screen and (max-width:600px) {
+	#titlediv img{
+		display: none;
+
+	}
+	#titlediv{
+	  width: 480px;
+	  height: 60px;
+	  margin: 0 auto;  
+	 /* background: cornflowerblue;*/
+	}
+	#btns{
+	  
+	  height: 60px;
+	  /*background: yellow;*/
+	  float:left;
+	}
+	#btns li{
+	  #titlediv img{
+		width: 80px;height: 60px;
+		float: right;
+
+	}
+	#titlediv{
+	  width: 520px;
+	  height: 60px;
+	  margin: 0 auto;  
+	 /* background: cornflowerblue;*/
+	}
+	#btns{
+	  float: left;
+	  height: 60px;
+	  /*background: yellow;*/
+	  float:left;
+	}
+	#btns li{
+	  font-size: 15px;
+	  color: white;
+	  text-align: center;
+	  line-height: 60px;
+	  width: 100px;
+	  height: 60px;
+	  margin: 0px 0px 5px 0px;
+	  float: right;
+	  border-radius: 6px;
+	  overflow: hidden;
+	  /*background: green;*/
+	}
+}

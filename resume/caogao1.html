@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我不是求职者而是设计师</title>
+		<link rel="stylesheet" type="text/css" href="css/初始化.css"/>
+		<!--这是引用的Font Awesome库-->
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+		<!--这是中央四个快捷方块各自的功能css样式-->
+		<link rel="stylesheet" type="text/css" href="css/Widget.css"/>
+            
+		<style>
+			html,body{
+				width: 100%;height: 100%;
+			}
+			/*这是title部分的css样式*/
+			#title{
+				position: relative;
+				width: 100%;height: 100%;
+				background: url(img/title.jpg) no-repeat;
+				background-position: center center;
+				background-size: cover;	
+			}
+			
+			/*以下是title中间部分css样式*/
+			.tlebox{
+				position: relative;
+				float: left;
+				width: 50%;height: 50%;
+				text-align: center;
+				background: repeat;
+			}
+			
+			.tlebox>div{
+				opacity:0;
+				position: absolute;
+				transition: 0.35s linear;
+				cursor: pointer;
+				width: 145px;height: 145px;
+				margin: 2.5px;
+			} 
+			.tlebox:nth-of-type(1) div{
+				right: 0;bottom: 0;
+				box-shadow: 15px 25px 35px 10px rgba(0,0,0,0.6); 
+				background:#F08080;
+			}
+			.tlebox:nth-of-type(2) div{
+				left: 0;bottom: 0;
+				box-shadow: 15px 25px 35px 10px rgba(0,0,0,0.6); 
+				background: #F4A460 	;
+			}
+			.tlebox:nth-of-type(3) div{
+				right: 0;top: 0;
+				box-shadow: 15px 25px 35px 10px rgba(0,0,0,0.6); 
+				background: #B687E3;
+				
+			}
+			.tlebox:nth-of-type(4) div{
+				left: 0;top: 0;
+				box-shadow: 15px 25px 35px 10px rgba(0,0,0,0.6); 
+				background: #90EE90;
+			}
+			.border{
+				border :5px solid rgba(255,255,255,0.5);
+			}
+			#tlespan{
+				display: none;
+				margin: 110px 0 0 20px;
+				color: white;
+				font-size: 30px;
+				float: left;
+			}
+			/*中央四个快捷方块的样式请看外部css*/
+			
+			/*以下播放器css部分*/
+			#audio{
+				position:absolute;
+				top: 80%;left:80%;
+				transform: translate(-80%,-80%);
+			}
+			#btn1{
+				cursor: pointer;
+				display: none;
+			}
+			#btn2{
+				cursor: pointer;
+			}
+			/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+			#god{
+				width: 200px;height: 1000px;
+				background: cornflowerblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="title">
+			<!--以下开头部分中间的盒子-->
+			<div class="tlebox">
+				<div class="tlediv1">
+					<span id="tlespan">示例一</span>
+				</div>
+			</div>
+			<div class="tlebox">
+				<div class="tlediv1">
+					<span id="tlespan">示例二</span>
+				</div>
+			</div>
+			<div class="tlebox">
+				<div class="tlediv1">
+					<span id="tlespan">示例三</span>
+				</div>	
+			</div>
+			<div class="tlebox">
+				<div class="tlediv1">
+					<span id="tlespan">示例四</span>	
+				</div>
+			</div>
+			<div id="Widget4" >
+					<div id='W4left'>
+						<i class="fa fa-times fa-2x"></i> 
+					</div>		
+			</div>
+			<!--以下播放器-->
+			<div id="audio">
+				<button  id="btn1">
+					<i class="fa fa-pause fa-2x"></i> 
+				</button>
+				<button  id="btn2">
+					<i class="fa fa-play fa-2x"></i> 
+				</button>
+				<audio id="video1" width="420" loop="loop" src="music/open.mp3" autoplay="autoplay">
+				</audio>
+			</div>
+		</div>
+		<div id="god">
+			
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/Widget.js"></script>
+	<script type="text/javascript">
+		
+		window.onload=function(){
+			//这是调用播放器函数部分
+			$('#btn1').click(function(){
+				playPause();
+			});
+			$('#btn2').click(function(){
+				playPause();
+			});
+			//这是关于title的中央部分 布局动画设定
+			$('.tlebox').eq(0).find('div').fadeTo(800,0.5);
+			$('.tlebox').eq(1).find('div').delay(500).fadeTo(800,0.5);
+			$('.tlebox').eq(2).find('div').delay(1000).fadeTo(800,0.5);
+			$('.tlebox').eq(3).find('div').delay(1500).fadeTo(800,0.5);
+			//这是关于title的中央部分 移入移出动画设定
+			$('.tlebox').mouseover(function(){
+				$(this).find('.tlediv1').css({"z-index":2,transform:"scale(1.15)",opacity:1});
+				$(this).find('.tlediv1').addClass('border');
+				$(this).next().find('.tlediv1').css({transform:"rotate("+90+"deg)"},1000);
+				$(this).prev().find('.tlediv1').css({transform:"rotateY("+180+"deg)"},1000);
+				$(this).find('#tlespan').css({display:"block"});
+			})
+			$('.tlebox').mouseout(function(){
+				$('.tlebox div').css({"z-index":1,transform:"scale(1)",opacity:0.5});
+				$('.tlebox div').removeClass('border');
+				$('.tlebox div').css({transform:"rotateY("+0+"deg) rotateY("+0+"deg)"});
+				$('.tlebox div').find('#tlespan').css({display:"none"});
+			})
+			
+		}
+		
+		
+		//这是关于播放器的设定
+		function playPause() {
+			var myVideo=document.querySelector("audio");
+			if(myVideo.paused) {
+				myVideo.play();
+				$('#btn1').css({"display":"none"});
+				$('#btn2').css({"display":"block"});
+			} else {
+				myVideo.pause();
+				$('#btn1').css({"display":"block"});
+				$('#btn2').css({"display":"none"});
+				
+			}
+		}
+	</script>
+</html>
